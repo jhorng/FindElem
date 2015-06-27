@@ -30,7 +30,6 @@ char* GlobalOrderError;
 //=======External Functions This Runner Calls=====
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_findElement(void);
 
 
 //=======Test Reset Option=====
@@ -45,8 +44,7 @@ void resetTest(void)
 //=======MAIN=====
 int main(void)
 {
-  UnityBegin("test_FindElem.c");
-  RUN_TEST(test_findElement, 9);
+  UnityBegin("test_SimpleList.c");
 
   return (UnityEnd());
 }
